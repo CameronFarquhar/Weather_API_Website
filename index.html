@@ -115,8 +115,10 @@ body {
       <img src="Resources/assets/images/lat_v_temp.png" class="float-left mr-2 mb-1">
         <p>The obective of this project is to analyze the effects of specified weather parameters as 
           changes in latitude are applied. The first step was to generate a random list of approximately 500 
-          geocoordinates. Using each latitude and longitude, the Python library citipy retrieved the city names
-          and current weather conditions for each coordinate.</p>
+          geocoordinates. Using each latitude and longitude, the Python library citipy retrieved the city names 
+          for each coordinate. The city names were then run through the API openweathermap.org which collected current
+          weather conditions for each coordinate.
+        </p>
 
           <p>Using this data and Python's Matplotlib, each chart on this website shows the relationship between latitude and weather conditions. Specific 
           conditions include temperaturem, cloudiness, wind speed, and humidity. The observations were collected in early February,
@@ -133,19 +135,19 @@ body {
       </div>
 
         <div class="row">
-            <div class="col-md-6 col-sm-12">
+            <div class="col-md-6 col-sm-3">
               <a href="Resources/max_temp.html"><img class="img-fluid" src="Resources/assets/images/lat_v_temp.png" alt="Responsive image"></a>
             </div>
-            <div class="col-md-6 col-sm-12">
+            <div class="col-md-6 col-sm-3">
               <a href="Resources/humidity.html"><img class="img-fluid" src="Resources/assets/images/lat_v_hum.png" alt="Responsive image"></a>
             </div>
         </div>
           <br>
         <div class="row">
-            <div class="col-md-6 col-sm-12">
+            <div class="col-md-6 col-sm-3">
               <a href="Resources/cloudiness.html"><img class="img-fluid" src="Resources/assets/images/lat_v_cloud.png" alt="Responsive image"></a>
             </div>
-            <div class="col-md-6 col-sm-12">
+            <div class="col-md-6 col-sm-3">
               <a href="Resources/wind_speed.html"><img class="img-fluid" src="Resources/assets/images/lat_v_wind.png" alt="Responsive image"></a>
             </div>
           </div>
