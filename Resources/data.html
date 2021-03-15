@@ -3,17 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Weather Analysis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link href="https://bootswatch.com/4/slate/bootstrap.min.css" rel="stylesheet" type="text/css">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+    .header{
+        position:sticky;
+        top: 0 ;
+    }
+
 
 .topnav {
   overflow: hidden;
@@ -44,8 +53,7 @@ body {
   display: none;
 }
 
-
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 400px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -53,7 +61,7 @@ body {
   }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 400px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -70,7 +78,7 @@ body {
 
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
     <a class="navbar-brand" href="../index.html">Latitude</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -100,20 +108,20 @@ body {
     </div>
   </nav>
 
-  <div class="table-responsive-sm">
+  <div class="table-responsive-sm tableFixHead">
   <table border="1" class="table table-striped">
-    <thead>
+    <thead style="position: sticky;top: 0" class="thead-dark">
       <tr style="text-align: left;">
         <th></th>
-        <th>City</th>
-        <th>Lat</th>
-        <th>Lng</th>
-        <th>Temp</th>
-        <th>Humidity</th>
-        <th>Cloudiness</th>
-        <th>Wind</th>
-        <th>Country</th>
-        <th>Date</th>
+        <th class="header" scope="col">City</th>
+        <th class="header" scope="col">Lat</th>
+        <th class="header" scope="col">Lng</th>
+        <th class="header" scope="col">Temp</th>
+        <th class="header" scope="col">Humidity</th>
+        <th class="header" scope="col">Cloudiness</th>
+        <th class="header" scope="col">Wind</th>
+        <th class="header" scope="col">Country</th>
+        <th class="header" scope="col">Date</th>
       </tr>
     </thead>
     <tbody>
