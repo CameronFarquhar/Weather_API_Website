@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <title>Weather Analysis</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+
     <link href="https://bootswatch.com/4/slate/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="style.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -49,7 +51,7 @@ body {
   .topnav a.icon {
     float: right;
     display: block;
-  }
+      }
 }
 
 @media screen and (max-width: 540px) {
@@ -70,7 +72,7 @@ body {
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="../index.html">Latitude</a>
+    <a class="navbar-brand" href="index.html">Latitude</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -111,15 +113,16 @@ body {
     <!-- </div> -->
 
       <img src="Resources/assets/images/lat_v_temp.png" class="float-left mr-2 mb-1">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-          Iste molestiae aliquam optio mollitia, unde quas eaque voluptatem dignissimos eos maiores magni reprehenderit nisi, 
-          corrupti nemo hic id cum quasi officiis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste molestiae aliquam optio mollitia, 
-          unde quas eaque voluptatem dignissimos eos maiores magni reprehenderit nisi, corrupti nemo hic id cum quasi officiis!
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-          Iste molestiae aliquam optio mollitia, unde quas eaque voluptatem dignissimos eos maiores magni reprehenderit nisi, 
-          corrupti nemo hic id cum quasi officiis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste molestiae aliquam optio mollitia, 
-          unde quas eaque voluptatem dignissimos eos maiores magni reprehenderit nisi, corrupti nemo hic id cum quasi officiis!
-          unde quas eaque voluptatem dignissimos eos maiores magni reprehenderit nisi, corrupti nemo hic id cum quasi officiis!
+        <p>The obective of this project is to analyze the effects of specified weather parameters as 
+          changes in latitude are applied. The first step was to generate a random list of approximately 500 
+          geocoordinates. Using each latitude and longitude, the Python library citipy retrieved the city names
+          and current weather conditions for each coordinate.</p>
+
+          <p>Using this data and Python's Matplotlib, each chart on this website shows the relationship between latitude and weather conditions. Specific 
+          conditions include temperaturem, cloudiness, wind speed, and humidity. The observations were collected in early February,
+          2021 which is winter in the northern hemisphere and summer in the southern. This is a factor to keep in mind while viewing
+          the charts. Click on each image or use the links up top to see a more in depth analysis of each chart.
+
         </p>
       </div>
 
