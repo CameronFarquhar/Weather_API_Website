@@ -5,15 +5,13 @@
     <title>Weather Analysis</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link href="https://bootswatch.com/4/slate/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
 
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-  
+
 h1 {text-align: center;}
 
 body {
@@ -50,7 +48,7 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 760px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -58,7 +56,7 @@ body {
       }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 760px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -71,12 +69,19 @@ body {
     text-align: left;
   }
 }
+
+@media screen and (max-width: 760px){
+  .navblue{
+    background-color: cadetblue;
+  }
+}
+
 </style>
 
 </head>
 <body>
   <nav class="navbar navbar-expand-md navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">Latitude</a>
+    <a class="navbar-brand navblue" href="index.html">Latitude</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -109,12 +114,12 @@ body {
   <div class="row">
     <div class="col-md-8">
 
-      <!-- <div class="container"> -->
+
       <div class="jumbotron">
         <h1 class="display-4">Summary: Latitude vs. X</h1>
         <hr class="my-4">
       </div>
-    <!-- </div> -->
+
 
       <img src="Resources/assets/images/lat_v_temp.png" class="float-left mr-2 mb-1">
         <p>The obective of this project is to analyze the effects of specified weather parameters as 
